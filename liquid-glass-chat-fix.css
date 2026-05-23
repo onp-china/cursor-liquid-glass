@@ -1,0 +1,110 @@
+/* Liquid Glass + Material Theme Palenight：只改背景，不覆盖文字/语法高亮 */
+
+:root {
+    --vibrancy-glass-base: rgba(41, 45, 62, 0.10);
+    --vibrancy-chat-bubble: rgba(41, 45, 62, 0.35);
+    --vibrancy-chat-input: rgba(51, 55, 71, 0.72);
+    --vibrancy-chat-panel: rgba(41, 45, 62, 0.50);
+}
+
+/* 编辑器背景透明，语法色仍由 Material Theme 插件提供 */
+.monaco-workbench {
+    --vscode-editor-background: transparent !important;
+}
+
+/* ========== 空编辑器 / 欢迎页透明磨砂 ========== */
+#workbench\.parts\.editor,
+#workbench\.parts\.editor > .content,
+#workbench\.parts\.editor > .content.empty,
+.monaco-workbench .part.editor,
+.monaco-workbench .part.editor > .content,
+.monaco-workbench .part.editor > .content.empty,
+.monaco-workbench .part.editor > .content .editor-group-container,
+.monaco-workbench .part.editor > .content .editor-group-container.empty,
+.monaco-workbench .part.editor > .content .editor-group-container > .editor-group-watermark {
+    background: transparent !important;
+    background-color: transparent !important;
+}
+
+#workbench\.parts\.editor > div.content.empty > div > div > div > div > div.monaco-scrollable-element > div.split-view-container,
+#workbench\.parts\.editor > div.content.empty > div > div > div > div > div.monaco-scrollable-element.mac > div.split-view-container,
+#workbench\.parts\.editor > div.content.empty .split-view-container,
+#workbench\.parts\.editor > div.content.empty .split-view-view,
+#workbench\.parts\.editor > div.content.empty .monaco-scrollable-element,
+.monaco-workbench .part.editor > .content.empty .split-view-container,
+.monaco-workbench .part.editor > .content.empty .split-view-view,
+.monaco-workbench .part.editor > .content.empty .monaco-grid-view,
+.monaco-workbench .part.editor > .content.empty .monaco-grid-branch-node {
+    background: transparent !important;
+    background-color: transparent !important;
+}
+
+.monaco-workbench .part.editor .editor-container,
+.monaco-workbench .part.editor .monaco-editor,
+.monaco-workbench .part.editor .monaco-editor-background {
+    background: transparent !important;
+    background-color: transparent !important;
+}
+
+/* ========== 聊天区：基础透明，气泡/输入更深 ========== */
+.monaco-workbench .part.auxiliarybar.basepanel.right {
+    background-color: transparent !important;
+}
+
+.monaco-workbench .part.auxiliarybar > .content,
+.monaco-workbench .part.auxiliarybar .scrollable-div-container,
+.monaco-workbench .part.auxiliarybar .conversations,
+.monaco-workbench .part.auxiliarybar .empty-pane-message-area,
+.monaco-workbench .part.auxiliarybar .composite.title {
+    background-color: transparent !important;
+}
+
+.monaco-workbench .part.auxiliarybar [id^='bubble-'] {
+    background-color: var(--vibrancy-chat-bubble) !important;
+    border-radius: 8px;
+}
+
+.monaco-workbench .part.auxiliarybar .full-input-box {
+    background-color: var(--vibrancy-chat-input) !important;
+}
+
+.monaco-workbench .part.auxiliarybar .composer-bar {
+    background-color: var(--vibrancy-chat-panel) !important;
+}
+
+.composer-control-panel .composer-bar,
+.composer-control-panel .composer-control-panel-sidebar {
+    background-color: var(--vibrancy-chat-panel) !important;
+}
+
+/* 侧边栏文件名 + 状态栏图标：局部提亮，不影响编辑器语法高亮 */
+.monaco-workbench .part.sidebar {
+    --vscode-sideBar-foreground: #babed8 !important;
+    --vscode-list-foreground: #babed8 !important;
+}
+
+.monaco-workbench .part.sidebar .monaco-list-row .label-name,
+.monaco-workbench .part.sidebar .monaco-icon-label {
+    color: #babed8 !important;
+}
+
+.monaco-workbench .part.sidebar .monaco-list-row.selected .label-name,
+.monaco-workbench .part.sidebar .monaco-list-row.focused .label-name {
+    color: #ffffff !important;
+}
+
+.monaco-workbench .part.statusbar {
+    --vscode-statusBar-foreground: #babed8 !important;
+}
+
+.monaco-workbench .part.statusbar .statusbar-item,
+.monaco-workbench .part.statusbar .statusbar-item a,
+.monaco-workbench .part.statusbar .codicon {
+    color: #babed8 !important;
+    opacity: 1 !important;
+}
+
+.monaco-workbench .part.statusbar .statusbar-item:hover,
+.monaco-workbench .part.statusbar .statusbar-item:hover .codicon {
+    color: #ffffff !important;
+}

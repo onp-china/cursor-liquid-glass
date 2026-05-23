@@ -1,0 +1,3 @@
+illixion.vscode-vibrancy-continued
+equinusocio.vsc-material-theme
+equinusocio.vsc-material-theme-icons
