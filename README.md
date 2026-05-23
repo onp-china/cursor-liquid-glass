@@ -2,6 +2,27 @@
 
 macOS 上 Cursor 的磨砂玻璃主题配置：**Material Theme Palenight** 语法高亮 + **Vibrancy Continued** 透明背景。
 
+## 说明
+
+**本仓库不是从零实现的磨砂方案**，而是基于社区已有项目和个人配置整理、微调后的**使用记录与备份**。
+
+我们做的是：
+
+- 选用并组合现有扩展与主题
+- 在他人方案基础上调整透明度、聊天区分层、对比度等参数
+- 把最终可用的 `settings` / CSS 片段保存下来，方便换机恢复
+
+核心能力来自以下项目（感谢原作者）：
+
+| 来源 | 作用 |
+|------|------|
+| [Vibrancy Continued](https://github.com/illixion/vscode-vibrancy-continued) | macOS 窗口磨砂 / 透明（`illixion.vscode-vibrancy-continued`） |
+| [Material Theme](https://github.com/material-theme/vsc-material-theme) | 语法高亮与 UI 配色（`equinusocio.vsc-material-theme`） |
+| [cursor-ai-liquid-glass-themes](https://github.com/ramonclaudio/cursor-ai-liquid-glass-themes) | Liquid Glass 思路与 Vibrancy 配置参考 |
+| Vibrancy 扩展内置 `Cursor Dark.css` fix | Cursor 聊天区 / 侧边栏透明修复（随扩展自动加载） |
+
+本仓库中**唯一自写部分**是 `liquid-glass-chat-fix.css` 及 `settings.vibrancy.json` 里的参数组合——即在上述方案之上的个人定制，并非独立开发的渲染引擎或主题框架。
+
 ## 特性
 
 - 编辑器 / 侧边栏 / 聊天区磨砂透明
