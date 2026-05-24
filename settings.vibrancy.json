@@ -72,7 +72,18 @@
             "list.inactiveSelectionForeground": "#80CBC4",
             "statusBar.foreground": "#babed8",
             "statusBarItem.hoverForeground": "#ffffff",
-            "statusBarItem.activeForeground": "#ffffff"
+            "statusBarItem.activeForeground": "#ffffff",
+            "tab.border": "#292D3E00",
+            "tab.activeBorder": "#292D3E00",
+            "tab.inactiveBorder": "#292D3E00",
+            "tab.hoverBorder": "#33374730",
+            "editorGroup.border": "#292D3E00",
+            "editorGroupDivider.border": "#292D3E00",
+            "editorGroupHeader.border": "#292D3E00",
+            "activityBar.foreground": "#babed8",
+            "activityBar.inactiveForeground": "#959cba",
+            "activityBar.activeForeground": "#ffffff",
+            "activityBarBadge.background": "#292D3E80"
         }
     }
 }
